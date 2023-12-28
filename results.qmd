@@ -42,7 +42,7 @@ df37b = pd.read_csv('실험결과/실험3/시나리오7b.csv').rename({'Unnamed:
 ```
 
 
-# 실험1 {orientation="columns" scrolling="true"}
+# Experiment 1 {orientation="columns" scrolling="true"}
 
 ## Column {width=50%}
 ```{python}
@@ -56,7 +56,7 @@ itables.show(df12)
 ```
 
 
-# 실험2 {orientation="columns" scrolling="true"}
+# Experiment 2 {orientation="columns" scrolling="true"}
 
 ## Column {width=50%}
 
@@ -103,7 +103,7 @@ itables.show(df23b)
 ```
 
 
-# 실험3 {orientation="columns" scrolling="true"}
+# Experiment 3 {orientation="columns" scrolling="true"}
 
 ## Column {width=50%}
 
