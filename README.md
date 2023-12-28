@@ -1,1 +1,1 @@
-[MBTI](https://seoyeonc.github.io/blog/)
+[MBTI](https://seoyeonc.github.io/MBTI_dashboard/)
