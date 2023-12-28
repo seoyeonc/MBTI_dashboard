@@ -1,1 +1,1 @@
-# 1227_results
+[MBTI](https://seoyeonc.github.io/blog/)
