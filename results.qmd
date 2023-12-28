@@ -55,6 +55,18 @@ itables.show(df11)
 itables.show(df12)
 ```
 
+# Visualization 1
+
+```{python}
+
+import pickle
+
+with open('실험결과/실험1/실험1결과요약.pkl', 'rb') as file:
+    visual1 = pickle.load(file)
+visual1.show()
+
+```
+
 
 # Experiment 2 {orientation="columns" scrolling="true"}
 
