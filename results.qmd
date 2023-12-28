@@ -46,12 +46,12 @@ df37b = pd.read_csv('실험결과/실험3/시나리오7b.csv').rename({'Unnamed:
 
 ## Column {width=50%}
 ```{python}
-#| title: 시나리오1 (without ChatGPT)
+#| title: Scenario 1 (without ChatGPT)
 itables.show(df11)
 ```
 ## Column {width=50%}
 ```{python}
-#| title: 시나리오2 (with ChatGPT)
+#| title: Scenario 2 (with ChatGPT)
 itables.show(df12)
 ```
 
@@ -66,17 +66,17 @@ itables.show(df20a)
 ```
 
 ```{python}
-#| title: 시나리오1 (without ChatGPT / +40)
+#| title: Scenario 1 (without ChatGPT / +40)
 itables.show(df21a)
 ```
 
 ```{python}
-#| title: 시나리오2 (without ChatGPT / +80)
+#| title: Scenario 2 (without ChatGPT / +80)
 itables.show(df22a)
 ```
 
 ```{python}
-#| title: 시나리오3 (without ChatGPT / +120)
+#| title: Scenario 3 (without ChatGPT / +120)
 itables.show(df23a)
 ```
 
@@ -88,17 +88,17 @@ itables.show(df20a)
 ```
 
 ```{python}
-#| title: 시나리오1 (with ChatGPT / +40)
+#| title: Scenario 1 (with ChatGPT / +40)
 itables.show(df21b)
 ```
 
 ```{python}
-#| title: 시나리오2 (with ChatGPT / +80)
+#| title: Scenario 2 (with ChatGPT / +80)
 itables.show(df22b)
 ```
 
 ```{python}
-#| title: 시나리오3 (with ChatGPT / +120)
+#| title: Scenario 3 (with ChatGPT / +120)
 itables.show(df23b)
 ```
 
@@ -113,37 +113,37 @@ itables.show(df30a)
 ```
 
 ```{python}
-#| title: 시나리오1 (without ChatGPT / +20)
+#| title: Scenario 1 (without ChatGPT / +20)
 itables.show(df31a)
 ```
 
 ```{python}
-#| title: 시나리오2 (without ChatGPT / +40)
+#| title: Scenario 2 (without ChatGPT / +40)
 itables.show(df32a)
 ```
 
 ```{python}
-#| title: 시나리오3 (without ChatGPT / +60)
+#| title: Scenario 3 (without ChatGPT / +60)
 itables.show(df33a)
 ```
 
 ```{python}
-#| title: 시나리오4 (without ChatGPT / +80)
+#| title: Scenario 4 (without ChatGPT / +80)
 itables.show(df34a)
 ```
 
 ```{python}
-#| title: 시나리오5 (without ChatGPT / +100)
+#| title: Scenario 5 (without ChatGPT / +100)
 itables.show(df35a)
 ```
 
 ```{python}
-#| title: 시나리오6 (without ChatGPT / +120)
+#| title: Scenario 6 (without ChatGPT / +120)
 itables.show(df36a)
 ```
 
 ```{python}
-#| title: 시나리오7 (without ChatGPT / +140)
+#| title: Scenario 7 (without ChatGPT / +140)
 itables.show(df37a)
 ```
 
@@ -156,37 +156,37 @@ itables.show(df30a)
 ```
 
 ```{python}
-#| title: 시나리오1 (with ChatGPT / +20)
+#| title: Scenario 1 (with ChatGPT / +20)
 itables.show(df31b)
 ```
 
 ```{python}
-#| title: 시나리오2 (with ChatGPT / +40)
+#| title: Scenario 2 (with ChatGPT / +40)
 itables.show(df32b)
 ```
 
 ```{python}
-#| title: 시나리오3 (with ChatGPT / +60)
+#| title: Scenario 3 (with ChatGPT / +60)
 itables.show(df33b)
 ```
 
 ```{python}
-#| title: 시나리오4 (with ChatGPT / +80)
+#| title: Scenario 4 (with ChatGPT / +80)
 itables.show(df34b)
 ```
 
 ```{python}
-#| title: 시나리오5 (with ChatGPT / +100)
+#| title: Scenario 5 (with ChatGPT / +100)
 itables.show(df35b)
 ```
 
 ```{python}
-#| title: 시나리오6 (with ChatGPT / +120)
+#| title: Scenario 6 (with ChatGPT / +120)
 itables.show(df36b)
 ```
 
 ```{python}
-#| title: 시나리오7 (with ChatGPT / +140)
+#| title: Scenario 7 (with ChatGPT / +140)
 itables.show(df37b)
 ```
 
