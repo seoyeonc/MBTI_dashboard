@@ -77,6 +77,8 @@ visual1.show()
 
 ## Column {width=50%}
 
+### Row {.tabset}
+
 ```{python}
 #| title: baseline (without ChatGPT / +0)
 itables.show(df20a)
@@ -98,6 +100,8 @@ itables.show(df23a)
 ```
 
 ## Column {width=50%}
+
+### Row {.tabset}
 
 ```{python}
 #| title: baseline (with ChatGPT / +0)
@@ -135,6 +139,8 @@ visual2.show()
 # Experiment 3 {orientation="columns" scrolling="true"}
 
 ## Column {width=50%}
+
+### Row {.tabset}
 
 ```{python}
 #| title: baseline (without ChatGPT / +0)
@@ -178,6 +184,8 @@ itables.show(df37a)
 
 
 ## Column {width=50%}
+
+### Row {.tabset}
 
 ```{python}
 #| title: baseline (with ChatGPT / +0)
