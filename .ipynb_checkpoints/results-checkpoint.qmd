@@ -295,7 +295,7 @@ ex3_s1.show()
 ```
 
 ```{python}
-#| title: Scenario 1 (with ChatGPT / +20)
+#| title: Scenario 2 (with ChatGPT / +40)
 import pickle
 
 with open('실험결과/실험3/실험셋업시각화_실험3시나리오2.pkl', 'rb') as file:
@@ -305,7 +305,7 @@ ex3_s2.show()
 ```
 
 ```{python}
-#| title: Scenario 1 (with ChatGPT / +40)
+#| title: Scenario 3 (with ChatGPT / +60)
 import pickle
 
 with open('실험결과/실험3/실험셋업시각화_실험3시나리오3.pkl', 'rb') as file:
