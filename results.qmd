@@ -60,15 +60,45 @@ itables.show(df11)
 itables.show(df12)
 ```
 
-# Visualization 1
+# Visualization 1 {orientation="columns" scrolling="true"}
+
+## Row {.tabset}
 
 ```{python}
+#| title: Plan of Experiment 1
+import pickle
 
+with open('실험결과/실험1/실험셋업시각화_실험1실험계획.pkl', 'rb') as file:
+    ex1_p = pickle.load(file)
+ex1_p.show()
+
+```
+```{python}
+#| title: Scenario 1 (without ChatGPT)
+import pickle
+
+with open('실험결과/실험1/실험셋업시각화_실험1시나리오1.pkl', 'rb') as file:
+    ex1_s1 = pickle.load(file)
+ex1_s1.show()
+
+```
+```{python}
+#| title: Scenario 2 (with ChatGPT)
+import pickle
+
+with open('실험결과/실험1/실험셋업시각화_실험1시나리오2.pkl', 'rb') as file:
+    ex1_s1 = pickle.load(file)
+ex1_s1.show()
+
+```
+
+```{python}
+#| title: Result of Experiment 1
 import pickle
 
 with open('실험결과/실험1/실험1결과요약.pkl', 'rb') as file:
-    visual1 = pickle.load(file)
-visual1.show()
+    ex1_r = pickle.load(file)
+ex1_r.show()
 
 ```
 
@@ -124,15 +154,27 @@ itables.show(df23b)
 ```
 
 
-# Visualization 2
+# Visualization 2 {orientation="columns" scrolling="true"}
+
+## Row {.tabset}
 
 ```{python}
+#| title: Scenario 1,2,3 (with ChatGPT / +40, +80, +120)
+import pickle
 
+with open('실험결과/실험2/실험셋업시각화_실험2시나리오0-3.pkl', 'rb') as file:
+    ex2_s = pickle.load(file)
+ex2_s.show()
+
+```
+
+```{python}
+#| title: Result of Experiment 2
 import pickle
 
 with open('실험결과/실험2/실험2결과요약.pkl', 'rb') as file:
-    visual2 = pickle.load(file)
-visual2.show()
+    ex2_r = pickle.load(file)
+ex2_r.show()
 
 ```
 
@@ -227,10 +269,95 @@ itables.show(df36b)
 itables.show(df37b)
 ```
 
-# Visualization 3
+# Visualization 3 {orientation="columns" scrolling="true"}
+
+## Row {.tabset}
+
 
 ```{python}
+#| title: baseline (with ChatGPT / +0)
+import pickle
 
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오0.pkl', 'rb') as file:
+    ex3_s = pickle.load(file)
+ex3_s.show()
+
+```
+
+```{python}
+#| title: Scenario 1 (with ChatGPT / +20)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오1.pkl', 'rb') as file:
+    ex3_s1 = pickle.load(file)
+ex3_s1.show()
+
+```
+
+```{python}
+#| title: Scenario 1 (with ChatGPT / +20)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오2.pkl', 'rb') as file:
+    ex3_s2 = pickle.load(file)
+ex3_s2.show()
+
+```
+
+```{python}
+#| title: Scenario 1 (with ChatGPT / +40)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오3.pkl', 'rb') as file:
+    ex3_s3 = pickle.load(file)
+ex3_s3.show()
+
+```
+
+```{python}
+#| title: Scenario 4 (with ChatGPT / +80)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오4.pkl', 'rb') as file:
+    ex3_s4 = pickle.load(file)
+ex3_s4.show()
+
+```
+
+```{python}
+#| title: Scenario 5 (with ChatGPT / +100)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오5.pkl', 'rb') as file:
+    ex3_s5 = pickle.load(file)
+ex3_s5.show()
+
+```
+
+
+```{python}
+#| title: Scenario 6 (with ChatGPT / +120)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오6.pkl', 'rb') as file:
+    ex3_s6 = pickle.load(file)
+ex3_s6.show()
+
+```
+
+```{python}
+#| title: Scenario 7 (with ChatGPT / +140)
+import pickle
+
+with open('실험결과/실험3/실험셋업시각화_실험3시나리오7.pkl', 'rb') as file:
+    ex3_s7 = pickle.load(file)
+ex3_s7.show()
+
+```
+
+
+```{python}
+#| title: Result of Experiment 3
 import pickle
 
 with open('실험결과/실험3/실험3결과요약.pkl', 'rb') as file:
