@@ -98,8 +98,8 @@ itables.show(df12)
 #| title: Plan of Experiment 1
 
 figs['실험1/실험셋업시각화_실험1실험계획'].layout['title']['text']='Figure 1: Plan of Experiment 1'
-figs['실험1/실험셋업시각화_실험1실험계획'].layout['width']=1050
-figs['실험1/실험셋업시각화_실험1실험계획'].layout['height']=800
+figs['실험1/실험셋업시각화_실험1실험계획'].layout['width']=1500
+figs['실험1/실험셋업시각화_실험1실험계획'].layout['height']=1000
 figs['실험1/실험셋업시각화_실험1실험계획']
 
 ```
@@ -107,8 +107,8 @@ figs['실험1/실험셋업시각화_실험1실험계획']
 #| title: Scenario 1 (without ChatGPT)
 
 figs['실험1/실험셋업시각화_실험1시나리오1'].layout['title']['text']='Figure 2: Scenario 1 (without ChatGPT)'
-figs['실험1/실험셋업시각화_실험1시나리오1'].layout['width']=1050
-figs['실험1/실험셋업시각화_실험1시나리오1'].layout['height']=800
+figs['실험1/실험셋업시각화_실험1시나리오1'].layout['width']=1500
+figs['실험1/실험셋업시각화_실험1시나리오1'].layout['height']=1000
 figs['실험1/실험셋업시각화_실험1시나리오1']
 
 ```
@@ -116,8 +116,8 @@ figs['실험1/실험셋업시각화_실험1시나리오1']
 #| title: Scenario 2 (with ChatGPT)
 
 figs['실험1/실험셋업시각화_실험1시나리오2'].layout['title']['text']='Figure 3: Scenario 2 (with ChatGPT)'
-figs['실험1/실험셋업시각화_실험1시나리오2'].layout['width']=1050
-figs['실험1/실험셋업시각화_실험1시나리오2'].layout['height']=800
+figs['실험1/실험셋업시각화_실험1시나리오2'].layout['width']=1500
+figs['실험1/실험셋업시각화_실험1시나리오2'].layout['height']=1000
 figs['실험1/실험셋업시각화_실험1시나리오2']
 
 ```
@@ -126,8 +126,8 @@ figs['실험1/실험셋업시각화_실험1시나리오2']
 #| title: Result of Experiment 1
 
 figs['실험1/실험1결과요약'].layout['title']['text']='Figure 4: Result of Experiment 1'
-figs['실험1/실험1결과요약'].layout['width']=1050
-figs['실험1/실험1결과요약'].layout['height']=800
+figs['실험1/실험1결과요약'].layout['width']=1500
+figs['실험1/실험1결과요약'].layout['height']=1000
 figs['실험1/실험1결과요약']
 
 ```
@@ -192,8 +192,8 @@ itables.show(df23b)
 #| title: Scenario 1,2,3 (with ChatGPT / +40, +80, +120)
 
 figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['title']['text']='Figure 5: Scenario 1,2,3 (with ChatGPT / +40, +80, +120)'
-figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['width']=1050
-figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['height']=800
+figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['width']=1500
+figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['height']=1000
 figs['실험2/실험셋업시각화_실험2시나리오0-3']
 
 ```
@@ -202,8 +202,8 @@ figs['실험2/실험셋업시각화_실험2시나리오0-3']
 #| title: Result of Experiment 2
 
 figs['실험2/실험2결과요약'].layout['title']['text']='Figure 6: Result of Experiment 2'
-figs['실험2/실험2결과요약'].layout['width']=1050
-figs['실험2/실험2결과요약'].layout['height']=800
+figs['실험2/실험2결과요약'].layout['width']=1500
+figs['실험2/실험2결과요약'].layout['height']=1000
 figs['실험2/실험2결과요약']
 
 ```
@@ -308,8 +308,8 @@ itables.show(df37b)
 #| title: baseline (with ChatGPT / +0)
 
 figs['실험3/실험셋업시각화_실험3시나리오0'].layout['title']['text']='Figure 7: baseline (with ChatGPT / +0)'
-figs['실험3/실험셋업시각화_실험3시나리오0'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오0'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오0'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오0'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오0']
 
 ```
@@ -318,8 +318,8 @@ figs['실험3/실험셋업시각화_실험3시나리오0']
 #| title: Scenario 1 (with ChatGPT / +20)
 
 figs['실험3/실험셋업시각화_실험3시나리오1'].layout['title']['text']='Figure 8: Scenario 1 (with ChatGPT / +20)'
-figs['실험3/실험셋업시각화_실험3시나리오1'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오1'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오1'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오1'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오1']
 
 ```
@@ -328,8 +328,8 @@ figs['실험3/실험셋업시각화_실험3시나리오1']
 #| title: Scenario 2 (with ChatGPT / +40)
 
 figs['실험3/실험셋업시각화_실험3시나리오2'].layout['title']['text']='Figure 8: Scenario 2 (with ChatGPT / +40)'
-figs['실험3/실험셋업시각화_실험3시나리오2'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오2'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오2'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오2'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오2']
 
 ```
@@ -338,8 +338,8 @@ figs['실험3/실험셋업시각화_실험3시나리오2']
 #| title: Scenario 3 (with ChatGPT / +60)
 
 figs['실험3/실험셋업시각화_실험3시나리오3'].layout['title']['text']='Figure 9: Scenario 3 (with ChatGPT / +60)'
-figs['실험3/실험셋업시각화_실험3시나리오3'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오3'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오3'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오3'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오3']
 
 ```
@@ -348,8 +348,8 @@ figs['실험3/실험셋업시각화_실험3시나리오3']
 #| title: Scenario 4 (with ChatGPT / +80)
 
 figs['실험3/실험셋업시각화_실험3시나리오4'].layout['title']['text']='Figure 10: Scenario 4 (with ChatGPT / +80)'
-figs['실험3/실험셋업시각화_실험3시나리오4'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오4'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오4'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오4'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오4']
 
 ```
@@ -358,8 +358,8 @@ figs['실험3/실험셋업시각화_실험3시나리오4']
 #| title: Scenario 5 (with ChatGPT / +100)
 
 figs['실험3/실험셋업시각화_실험3시나리오5'].layout['title']['text']='Figure 11: Scenario 5 (with ChatGPT / +100)'
-figs['실험3/실험셋업시각화_실험3시나리오5'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오5'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오5'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오5'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오5']
 
 ```
@@ -369,8 +369,8 @@ figs['실험3/실험셋업시각화_실험3시나리오5']
 #| title: Scenario 6 (with ChatGPT / +120)
 
 figs['실험3/실험셋업시각화_실험3시나리오6'].layout['title']['text']='Figure 12: Scenario 6 (with ChatGPT / +120)'
-figs['실험3/실험셋업시각화_실험3시나리오6'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오6'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오6'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오6'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오6']
 
 ```
@@ -379,8 +379,8 @@ figs['실험3/실험셋업시각화_실험3시나리오6']
 #| title: Scenario 7 (with ChatGPT / +140)
 
 figs['실험3/실험셋업시각화_실험3시나리오7'].layout['title']['text']='Figure 13: Scenario 7 (with ChatGPT / +140)'
-figs['실험3/실험셋업시각화_실험3시나리오7'].layout['width']=1050
-figs['실험3/실험셋업시각화_실험3시나리오7'].layout['height']=800
+figs['실험3/실험셋업시각화_실험3시나리오7'].layout['width']=1500
+figs['실험3/실험셋업시각화_실험3시나리오7'].layout['height']=1000
 figs['실험3/실험셋업시각화_실험3시나리오7']
 
 ```
@@ -390,8 +390,8 @@ figs['실험3/실험셋업시각화_실험3시나리오7']
 #| title: Result of Experiment 3
 
 figs['실험3/실험3결과요약'].layout['title']['text']='Figure 14: Result of Experiment 3'
-figs['실험3/실험3결과요약'].layout['width']=1050
-figs['실험3/실험3결과요약'].layout['height']=800
+figs['실험3/실험3결과요약'].layout['width']=1500
+figs['실험3/실험3결과요약'].layout['height']=1000
 figs['실험3/실험3결과요약']
 
 ```
