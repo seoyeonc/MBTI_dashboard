@@ -18,6 +18,9 @@ execute:
 #| output: false
 import pandas as pd
 import itables 
+import pickle
+
+
 df11 = pd.read_csv('실험결과/실험1/시나리오1.csv').rename({'Unnamed: 0':'Method','Unnamed: 1':'Metrics'},axis=1).set_index(['Method','Metrics'])
 df12 = pd.read_csv('실험결과/실험1/시나리오2.csv').rename({'Unnamed: 0':'Method','Unnamed: 1':'Metrics'},axis=1).set_index(['Method','Metrics'])
 #---#
@@ -44,6 +47,33 @@ df36a = pd.read_csv('실험결과/실험3/시나리오6a.csv').rename({'Unnamed:
 df36b = pd.read_csv('실험결과/실험3/시나리오6b.csv').rename({'Unnamed: 0':'Method','Unnamed: 1':'Metrics'},axis=1).set_index(['Method','Metrics'])
 df37a = pd.read_csv('실험결과/실험3/시나리오7a.csv').rename({'Unnamed: 0':'Method','Unnamed: 1':'Metrics'},axis=1).set_index(['Method','Metrics'])
 df37b = pd.read_csv('실험결과/실험3/시나리오7b.csv').rename({'Unnamed: 0':'Method','Unnamed: 1':'Metrics'},axis=1).set_index(['Method','Metrics'])
+
+file_names = [
+    "실험1/실험1결과요약.pkl",
+    "실험1/실험셋업시각화_실험1시나리오1.pkl",
+    "실험1/실험셋업시각화_실험1시나리오2.pkl",
+    "실험1/실험셋업시각화_실험1실험계획.pkl",
+
+    "실험2/실험2결과요약.pkl",
+    "실험2/실험셋업시각화_실험2시나리오0-3.pkl",
+
+    "실험3/실험3결과요약.pkl",
+    "실험3/실험셋업시각화_실험3시나리오0.pkl",
+    "실험3/실험셋업시각화_실험3시나리오1.pkl",
+    "실험3/실험셋업시각화_실험3시나리오2.pkl",
+    "실험3/실험셋업시각화_실험3시나리오3.pkl",
+    "실험3/실험셋업시각화_실험3시나리오4.pkl",
+    "실험3/실험셋업시각화_실험3시나리오5.pkl",
+    "실험3/실험셋업시각화_실험3시나리오6.pkl",
+    "실험3/실험셋업시각화_실험3시나리오7.pkl"
+]
+def _load(path):
+    with open(path,'rb') as f:
+        rtn = pickle.load(f)
+    return rtn 
+    
+figs = {fname.replace('.pkl',''): _load(f'./실험결과/{fname}') for fname in file_names}
+
 ```
 
 
@@ -66,39 +96,39 @@ itables.show(df12)
 
 ```{python}
 #| title: Plan of Experiment 1
-import pickle
 
-with open('실험결과/실험1/실험셋업시각화_실험1실험계획.pkl', 'rb') as file:
-    ex1_p = pickle.load(file)
-ex1_p.show()
+figs['실험1/실험셋업시각화_실험1실험계획'].layout['title']['text']='Figure 1: Plan of Experiment 1'
+figs['실험1/실험셋업시각화_실험1실험계획'].layout['width']=1050
+figs['실험1/실험셋업시각화_실험1실험계획'].layout['height']=600
+figs['실험1/실험셋업시각화_실험1실험계획']
 
 ```
 ```{python}
 #| title: Scenario 1 (without ChatGPT)
-import pickle
 
-with open('실험결과/실험1/실험셋업시각화_실험1시나리오1.pkl', 'rb') as file:
-    ex1_s1 = pickle.load(file)
-ex1_s1.show()
+figs['실험1/실험셋업시각화_실험1시나리오1'].layout['title']['text']='Figure 2: Scenario 1 (without ChatGPT)'
+figs['실험1/실험셋업시각화_실험1시나리오1'].layout['width']=1050
+figs['실험1/실험셋업시각화_실험1시나리오1'].layout['height']=600
+figs['실험1/실험셋업시각화_실험1시나리오1']
 
 ```
 ```{python}
 #| title: Scenario 2 (with ChatGPT)
-import pickle
 
-with open('실험결과/실험1/실험셋업시각화_실험1시나리오2.pkl', 'rb') as file:
-    ex1_s1 = pickle.load(file)
-ex1_s1.show()
+figs['실험1/실험셋업시각화_실험1시나리오2'].layout['title']['text']='Figure 3: Scenario 2 (with ChatGPT)'
+figs['실험1/실험셋업시각화_실험1시나리오2'].layout['width']=1050
+figs['실험1/실험셋업시각화_실험1시나리오2'].layout['height']=600
+figs['실험1/실험셋업시각화_실험1시나리오2']
 
 ```
 
 ```{python}
 #| title: Result of Experiment 1
-import pickle
 
-with open('실험결과/실험1/실험1결과요약.pkl', 'rb') as file:
-    ex1_r = pickle.load(file)
-ex1_r.show()
+figs['실험1/실험1결과요약'].layout['title']['text']='Figure 4: Result of Experiment 1'
+figs['실험1/실험1결과요약'].layout['width']=1050
+figs['실험1/실험1결과요약'].layout['height']=600
+figs['실험1/실험1결과요약']
 
 ```
 
@@ -160,21 +190,21 @@ itables.show(df23b)
 
 ```{python}
 #| title: Scenario 1,2,3 (with ChatGPT / +40, +80, +120)
-import pickle
 
-with open('실험결과/실험2/실험셋업시각화_실험2시나리오0-3.pkl', 'rb') as file:
-    ex2_s = pickle.load(file)
-ex2_s.show()
+figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['title']['text']='Figure 5: Scenario 1,2,3 (with ChatGPT / +40, +80, +120)'
+figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['width']=1050
+figs['실험2/실험셋업시각화_실험2시나리오0-3'].layout['height']=600
+figs['실험2/실험셋업시각화_실험2시나리오0-3']
 
 ```
 
 ```{python}
 #| title: Result of Experiment 2
-import pickle
 
-with open('실험결과/실험2/실험2결과요약.pkl', 'rb') as file:
-    ex2_r = pickle.load(file)
-ex2_r.show()
+figs['실험2/실험2결과요약'].layout['title']['text']='Figure 6: Result of Experiment 2'
+figs['실험2/실험2결과요약'].layout['width']=1050
+figs['실험2/실험2결과요약'].layout['height']=600
+figs['실험2/실험2결과요약']
 
 ```
 
@@ -276,92 +306,92 @@ itables.show(df37b)
 
 ```{python}
 #| title: baseline (with ChatGPT / +0)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오0.pkl', 'rb') as file:
-    ex3_s = pickle.load(file)
-ex3_s.show()
+figs['실험3/실험셋업시각화_실험3시나리오0'].layout['title']['text']='Figure 7: baseline (with ChatGPT / +0)'
+figs['실험3/실험셋업시각화_실험3시나리오0'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오0'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오0']
 
 ```
 
 ```{python}
 #| title: Scenario 1 (with ChatGPT / +20)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오1.pkl', 'rb') as file:
-    ex3_s1 = pickle.load(file)
-ex3_s1.show()
+figs['실험3/실험셋업시각화_실험3시나리오1'].layout['title']['text']='Figure 8: Scenario 1 (with ChatGPT / +20)'
+figs['실험3/실험셋업시각화_실험3시나리오1'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오1'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오1']
 
 ```
 
 ```{python}
 #| title: Scenario 2 (with ChatGPT / +40)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오2.pkl', 'rb') as file:
-    ex3_s2 = pickle.load(file)
-ex3_s2.show()
+figs['실험3/실험셋업시각화_실험3시나리오2'].layout['title']['text']='Figure 8: Scenario 2 (with ChatGPT / +40)'
+figs['실험3/실험셋업시각화_실험3시나리오2'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오2'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오2']
 
 ```
 
 ```{python}
 #| title: Scenario 3 (with ChatGPT / +60)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오3.pkl', 'rb') as file:
-    ex3_s3 = pickle.load(file)
-ex3_s3.show()
+figs['실험3/실험셋업시각화_실험3시나리오3'].layout['title']['text']='Figure 9: Scenario 3 (with ChatGPT / +60)'
+figs['실험3/실험셋업시각화_실험3시나리오3'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오3'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오3']
 
 ```
 
 ```{python}
 #| title: Scenario 4 (with ChatGPT / +80)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오4.pkl', 'rb') as file:
-    ex3_s4 = pickle.load(file)
-ex3_s4.show()
+figs['실험3/실험셋업시각화_실험3시나리오4'].layout['title']['text']='Figure 10: Scenario 4 (with ChatGPT / +80)'
+figs['실험3/실험셋업시각화_실험3시나리오4'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오4'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오4']
 
 ```
 
 ```{python}
 #| title: Scenario 5 (with ChatGPT / +100)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오5.pkl', 'rb') as file:
-    ex3_s5 = pickle.load(file)
-ex3_s5.show()
+figs['실험3/실험셋업시각화_실험3시나리오5'].layout['title']['text']='Figure 11: Scenario 5 (with ChatGPT / +100)'
+figs['실험3/실험셋업시각화_실험3시나리오5'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오5'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오5']
 
 ```
 
 
 ```{python}
 #| title: Scenario 6 (with ChatGPT / +120)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오6.pkl', 'rb') as file:
-    ex3_s6 = pickle.load(file)
-ex3_s6.show()
+figs['실험3/실험셋업시각화_실험3시나리오6'].layout['title']['text']='Figure 12: Scenario 6 (with ChatGPT / +120)'
+figs['실험3/실험셋업시각화_실험3시나리오6'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오6'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오6']
 
 ```
 
 ```{python}
 #| title: Scenario 7 (with ChatGPT / +140)
-import pickle
 
-with open('실험결과/실험3/실험셋업시각화_실험3시나리오7.pkl', 'rb') as file:
-    ex3_s7 = pickle.load(file)
-ex3_s7.show()
+figs['실험3/실험셋업시각화_실험3시나리오7'].layout['title']['text']='Figure 13: Scenario 7 (with ChatGPT / +140)'
+figs['실험3/실험셋업시각화_실험3시나리오7'].layout['width']=1050
+figs['실험3/실험셋업시각화_실험3시나리오7'].layout['height']=600
+figs['실험3/실험셋업시각화_실험3시나리오7']
 
 ```
 
 
 ```{python}
 #| title: Result of Experiment 3
-import pickle
 
-with open('실험결과/실험3/실험3결과요약.pkl', 'rb') as file:
-    visual3 = pickle.load(file)
-visual3.show()
+figs['실험3/실험3결과요약'].layout['title']['text']='Figure 14: Result of Experiment 3'
+figs['실험3/실험3결과요약'].layout['width']=1050
+figs['실험3/실험3결과요약'].layout['height']=600
+figs['실험3/실험3결과요약']
 
 ```
