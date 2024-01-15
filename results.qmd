@@ -99,7 +99,7 @@ itables.show(df12)
 
 figs['실험1/실험셋업시각화_실험1실험계획'].layout['title']['text']='Figure 1: Plan of Experiment 1'
 figs['실험1/실험셋업시각화_실험1실험계획'].layout['width']=1500
-figs['실험1/실험셋업시각화_실험1실험계획'].layout['height']=800
+figs['실험1/실험셋업시각화_실험1실험계획'].layout['height']=600
 figs['실험1/실험셋업시각화_실험1실험계획']
 
 ```
